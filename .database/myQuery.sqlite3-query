@@ -1,0 +1,15 @@
+-- database: ./database.db
+
+--SELECT * FROM Terrariaweapons
+
+--SELECT WEAPONNAME FROM Terrariaweapons
+--WHERE PRE_HARDMODE = 'False' ORDER BY DAMAGE desc;
+
+--SELECT WEAPONNAME, DAMAGE from Terrariaweapons
+--WHERE WEAPONTYPE = 'Gun' ORDER by DAMAGE desc;
+
+--SELECT * from terrariaweapons
+--WHERE SPEED = 'Very Fast';
+
+--SELECT * FROM Terrariaweapons
+--WHERE PRE_HARDMODE = 'False';

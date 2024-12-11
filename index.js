@@ -1,8 +1,8 @@
 const sqlite3 = require("sqlite3").verbose();
-const db = new sqlite3.Database("database/database.db");
+const db = new sqlite3.Database(".database/database.db");
 
 let myString = "[\n";
-db.all("SELECT * FROM terrariaweapons", function (err, rows) {
+db.all("SELECT * FROM Terrariaweapons", function (err, rows) {
   let myCounter = 0;
   rows.forEach(function (row) {
     // for debugging
@@ -22,6 +22,8 @@ db.all("SELECT * FROM terrariaweapons", function (err, rows) {
       '",\n"USE_TIME":"' +
       row.USE_TIME +
       ' ",\n"SPEED":"' +
+      row.SPEED +
+      ' ",\n"TOOLTIP":"' +
       row.TOOLTIP +
       '",\n"PRE_HARDMODE":"' +
       row.PRE_HARDMODE;
